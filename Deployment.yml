@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: jesuspana18/devops:lastest
+          image: jesuspana18/devops:latest
           ports:
             - containerPort: 80
