@@ -15,3 +15,8 @@
 
     - name: create new service
       command: kubectl apply -f /home/ubuntu/Service.yml --force --kubeconfig=/home/ubuntu/.kube/config
+      
+    - name: ensure deployment uses latest image
+      command: kubectl set image deployment/myfirstdevopsappdeployment \
+               myapp=jesuspana18/devops:latest --kubeconfig=/home/ubuntu/.kube/config
+      ignore_errors: false

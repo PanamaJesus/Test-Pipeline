@@ -15,5 +15,6 @@ spec:
       containers:
         - name: myapp
           image: jesuspana18/devops:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
